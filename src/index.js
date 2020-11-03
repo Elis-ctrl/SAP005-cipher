@@ -1,29 +1,26 @@
 import cipher from './cipher.js';
 
-Funcion ceasarCipher (str,num)  
-    num = num % 26;
-    let touppercase = str.totoupperCase();
+    const Bc = document.getElementById("bc")
+        Bc.addEventListener("click", Decode)
+    const Bd = document.getElementById("bd")
+        Bd.addEventListener("click", Encode)
+    let msg = document.getElementById("msgcrip").value.toUpperCase();
+    let key = +document.getElementById("key").value.number;
+    let msgd = document.getElementById("msgdcrip").value.toUpperCase();
+    let keyd = +document.getElementById("keyd").value.number;
+    let newStrCrip = " " ;
+    let newStrDcrip = " ";
     let alphabet = "abcdefghijklmnopqrstuvwxyz".split('');
-    let newStr = "";
+    let Nalphabet = 26
 
-for(let i = 0; <  CaseStr.length ; i++) {
-    let currentletter = TouperCaseStr[i];
-    if(currentletter === "") {
-        NewStr += currentletter;
-        continue;
+    function Decode(){
+        console.log("chamou o botão encrip")
     }
-    let currentIndex = alphabet.indexOf(currentLetter)
-    let newIndex = currentLetter + num;
-    if(newIndex > 25) newIndex = newIndex - 26;
-    if(newIndex < 0) newIndex = newIndex + 26;
-    if(str[i]) === str[i].toupperCase()){
-        newStr += alphabet[newIndex];
-    }
-    }
-    else newStr += alphabet[newIndex];
-}
-return NewStr;
-}
 
-console.log(cipher);
+    function Encode(){
+        console.log("chamou o botão decrip")
 
+    }
+
+    // let values = Array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
+    // outra forma de fracionar o alfabeto //
