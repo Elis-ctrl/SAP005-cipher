@@ -1,21 +1,46 @@
 const cipher = {
 
-  // function decode(msg, key) {
-    
-  //     for(let contador = 0; contador < msg.length; contador++){
-  //      let posicaoDaLetraNoAlfabeto = msg.charCodeAt(contador)-65;
-  //       let letraComDeslocamento = (posicaoDaLetraNoAlfabeto + key) % Nalphabet;
-  //       letraComDeslocamento = letraComDeslocamento == 0 % 26 : letraComDeslocamento;
-  //       newStrCrip += values[letraComDeslocamento];
-  //     }
-  // {
-    
-  // }
-  // function decode(params) {  
-  // }
+  encode: function(key, msg) {
+    let newStrCrip = ""
+    for(let contador = 0; contador < msg.length; contador++){
+
+      let posicaoDaLetraNoAlfabeto = msg.charCodeAt(contador) - 65;
+      let newcharC = ((posicaoDaLetraNoAlfabeto + key) % 26) + 65;
+      let newString = String.fromCharCode(newcharC)
+
+      newStrCrip += newString;
+    }
+    return newStrCrip
+  },
+
+  decode: function(keyd, msgd) {
+    let newStrDcrip = ""
+    for(let c = 0; c < msgd.length; c++){
+
+      let posicaoDaLetraNoAlfabetochar = msgd.charCodeAt(c) - 65;
+      let newcharDC = ((posicaoDaLetraNoAlfabetochar - keyd) % 26) + 65;
+      let newStringD = String.fromCharCode(newcharDC)
+
+      newStrDcrip += newStringD;
+    } 
+    return newStrDcrip
+  },
+}
+
+  export default cipher;
+
+
+
+
+
+
+// dados passados no video
+// (codigodaletra + desloc) % tamanhodoalfabeto
+// codigodaletraasc - codigodaprimeiraletra + deslocamento) % tamanho do alfabeto ) + codigodaprimeiraletra
+// strig.FromcharCodeAt()
 // console.log(cipher);
 
-// function calculate() {
+// fu calculate() {
 //   var input = document.getElementById("input").value.toUpperCase();
 //   var result = "";
 
@@ -28,38 +53,3 @@ const cipher = {
 //   }
 
 //   document.getElementById("output").innerHTML = result;
-// }
-
-// Function CeasarCipherD (str,num)  
-
-// for(let i = 0; <  CaseStr.length ; i++) {
-//   let currentletter = TouperCaseStr[i];
-//   if(currentletter === "") {
-//       NewStr += currentletter;
-//       continue;
-//   }
-//   let currentIndex = alphabet.indexOf(currentLetter)
-//   let newIndex = currentLetter + num;
-//   if(newIndex > 25) newIndex = newIndex - 26;
-//   if(newIndex < 0) newIndex = newIndex + 26;
-//   if(str[i]) === str[i].toupperCase()){
-//       newStr += alphabet[newIndex];
-//   }
-//   }
-//   else newStr += alphabet[newIndex];
-// }
-// // return NewStr;
-
-
-
-// // };
-
-// cipher.encode() e cipher.decode()
-
-export default cipher;
-
-// (codigodaletra + desloc) % tamanhodoalfabeto
-
-// codigodaletraasc - codigodaprimeiraletra + deslocamento) % tamanho do alfabeto ) + codigodaprimeiraletra
-
-// strig.FromcharCodeAt()
