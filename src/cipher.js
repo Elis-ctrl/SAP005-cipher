@@ -17,8 +17,8 @@ const cipher = {
     let newStrDcrip = ""
     for(let c = 0; c < msgd.length; c++){
 
-      let posicaoDaLetraNoAlfabetochar = msgd.charCodeAt(c) - 65;
-      let newcharDC = ((posicaoDaLetraNoAlfabetochar - keyd) % 26) + 65;
+      let posicaoDaLetraNoAlfabetochar = msgd.charCodeAt(c) - 90;
+      let newcharDC = ((posicaoDaLetraNoAlfabetochar - keyd) % 26) + 90;
       let newStringD = String.fromCharCode(newcharDC)
 
       newStrDcrip += newStringD;
