@@ -3,7 +3,7 @@ const cipher = {
   encode: function(key, msg) {
     let newStrCrip = ""
 
-    if ( key == null || msg == null) {
+    if ( key == null || msg == null || key == 0 || msg == 0) {
       throw new TypeError("Deu bug"); 
   } else {
     for(let contador = 0; contador < msg.length; contador++) {
@@ -21,7 +21,7 @@ const cipher = {
   decode: function(keyd, msgd) {
     let newStrDcrip = ""
 
-    if ( keyd == null || msgd == null) {
+    if ( keyd == null || msgd == null || keyd == 0 || msgd == 0) {
       throw new TypeError("Deu bug"); 
   } else {
     for(let c = 0; c < msgd.length; c++) {
