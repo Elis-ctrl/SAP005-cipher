@@ -1,7 +1,5 @@
 
 # **Cifra de César** <h1>
-=======
-#Cifra de César
 
 ## Índice
 
@@ -12,9 +10,11 @@
 * [5. Metodologia utilizadas]
 
 
-## 1. Prefácio
+## 1. Prefácio 
 Este projeto irá apresentar uma prévia dos conhecimentos adquiridos até esta data,
 realizando assim uma aplicação a cifra de cesar disposta pela proposta educacional da Laboratoria.  
+
+:eight_spoked_asterisk:
 
 ## 2. Resumo do projeto
 
@@ -26,9 +26,11 @@ digitar mensagens ou até mesmo codigos de stremers para trocar com amigos ou ut
 outro app que esteja patrocinando o video.
 O projeto codiguim irá auxiliar jovens adolescentes a interarir de forma mais dinamica com os amigos e com o meio.
 
+:no_entry_sign:
+
 ## 3. Prototipo
 
-![Sketch](src/imagem1.pdf)
+![Sketch](src/imagem1.png)
 
 ### Interface do usuário (UI)
 
