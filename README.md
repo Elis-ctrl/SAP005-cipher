@@ -1,24 +1,16 @@
-<<<<<<< HEAD
+
 # **Cifra de César** <h1>
 =======
 #Cifra de César
 
 ## Índice
 
-* [1. Prefácio](#1-prefácio)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do
-  projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Guias, dicas e leituras
-  complementares](#8-guias-dicas-e-leituras-complementares)
-* [9. Checklist](#9-checklist)
+* [1. Prefácio]
+* [2. Resumo do projeto]
+* [3. Prototipo]
+* [4.Interface do Usuario (UI)] 
+* [5. Metodologia utilizadas]
 
-***
->>>>>>> 4abca7965e64771830884bbbb1f1f31ae69dbcb0
 
 ## 1. Prefácio
 Este projeto irá apresentar uma prévia dos conhecimentos adquiridos até esta data,
@@ -35,12 +27,12 @@ outro app que esteja patrocinando o video.
 O projeto codiguim irá auxiliar jovens adolescentes a interarir de forma mais dinamica com os amigos e com o meio.
 
 ## 3. Prototipo
-ADD imagem 
 
+![Sketch](src/imagem1.pdf)
 
 ### Interface do usuário (UI)
 
-ADD print do aplicativo
+![Sketch](src/imagem2.png)
 
 ### Metodologias utilizadas:
 * Vanilla JavaScript;
