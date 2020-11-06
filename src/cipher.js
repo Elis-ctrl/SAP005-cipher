@@ -2,7 +2,11 @@ const cipher = {
 
   encode: function(key, msg) {
     let newStrCrip = ""
-    for(let contador = 0; contador < msg.length; contador++){
+
+    if ( key == null || msg == null) {
+      throw new TypeError("Deu bug"); 
+  } else {
+    for(let contador = 0; contador < msg.length; contador++) {
 
       let posicaoDaLetraNoAlfabeto = msg.charCodeAt(contador) - 65;
       let newcharC = ((posicaoDaLetraNoAlfabeto + key) % 26) + 65;
@@ -11,11 +15,16 @@ const cipher = {
       newStrCrip += newString;
     }
     return newStrCrip
-  },
+  }
+},
 
   decode: function(keyd, msgd) {
     let newStrDcrip = ""
-    for(let c = 0; c < msgd.length; c++){
+
+    if ( keyd == null || msgd == null) {
+      throw new TypeError("Deu bug"); 
+  } else {
+    for(let c = 0; c < msgd.length; c++) {
 
       let posicaoDaLetraNoAlfabetochar = msgd.charCodeAt(c) - 90;
       let newcharDC = ((posicaoDaLetraNoAlfabetochar - keyd) % 26) + 90;
@@ -24,10 +33,12 @@ const cipher = {
       newStrDcrip += newStringD;
     } 
     return newStrDcrip
-  },
+  }
 }
+};
 
   export default cipher;
+
 
 
 
@@ -51,5 +62,3 @@ const cipher = {
 //       letraComDeslocamento = letraComDeslocamento == 0 ? 26 : letraComDeslocamento; //MOD retornar 0 caso o resultado seja 26, tem que tratar isso
 //       result += values[letraComDeslocamento-1]; //Faz -1 porque a letra 1 (A) está no índice 0 do teu array.
 //   }
-
-//   document.getElementById("output").innerHTML = result;

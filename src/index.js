@@ -7,7 +7,7 @@ function cifrarMensagem(event) {
     event.preventDefault();
     let msg = document.getElementById("msgcrip").value.toUpperCase();
     let key = document.getElementById("key").value;
-    const stringCifrada = cipher.encode(Number(key), msg)
+    const stringCifrada = cipher.encode(Number(key), msg);
     const exibeStringCifrada = document.getElementById("newStrCrip");
     exibeStringCifrada.innerHTML = stringCifrada
 }
@@ -19,7 +19,7 @@ function decifrarMensagem(event){
     event.preventDefault();
     let msgd = document.getElementById("msgdcrip").value.toUpperCase();
     let keyd = document.getElementById("keyd").value;
-    const stringDecifrada = cipher.decode(Number(keyd), msgd)
+    const stringDecifrada = cipher.decode(Number(keyd), msgd);
     const exibeStringDecifrada = document.getElementById("newStrDcrip");
     exibeStringDecifrada.innerHTML = stringDecifrada
 }
