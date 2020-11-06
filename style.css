@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swa");
+
+body{
+    background-image:url(fundo.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20pt
+    }
+button {
+    background: #005e54;
+    border-radius: 50%;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    }
+    /* .input{
+
+    }; */
+
